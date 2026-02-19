@@ -322,7 +322,7 @@ watch(darkMode, async () => {
       <!-- ORBIT SYSTEM -->
       <div class="orbit-stage mb-16">
         <div class="orbit-guide-ring"></div>
-        <img src="@/assets/me.jpg" alt="Kewar" class="avatar" />
+        <img src="@/assets/me3.jpg" alt="Kewar" class="avatar" />
         <div class="orbit-spinner">
           <div
             v-for="(item, i) in orbitIcons"
