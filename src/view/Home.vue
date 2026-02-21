@@ -367,7 +367,7 @@ watch(darkMode, async () => {
       <span class="file-name">dev.js</span>
     </div>
 
-    <!-- Code content -->
+    <!-- Code content- -->
     <div class="mini-code-body">
       <p><span class="code-key">const</span> developer = {"{"}</p>
       <p>&nbsp;&nbsp;name: <span class="code-string">'Kewar'</span>,</p>
