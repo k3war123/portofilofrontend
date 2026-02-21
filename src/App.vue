@@ -304,4 +304,95 @@ html { scroll-behavior: smooth; }
 .nav-link {
   letter-spacing: 0.02em;
 }
+
+.project-card {
+  border-radius: 18px;
+  border: 1px solid var(--border-card);
+  background-color: var(--bg-card);
+  transition: all 0.35s ease;
+  position: relative;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(99, 102, 241, 0.18);
+  border-color: rgba(99, 102, 241, 0.4);
+}
+
+.project-tag {
+  font-size: 0.7rem;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(99, 102, 241, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  color: var(--text-base);
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.project-tag:hover {
+  background: rgba(99, 102, 241, 0.18);
+}
+
+/* ================================================================
+   MINI CODE CARD (HERO)
+   ================================================================ */
+.mini-code-card {
+  width: 280px;
+  border-radius: 18px;
+  border: 1px solid var(--border-card);
+  background: var(--bg-card);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  transition: 0.4s ease;
+}
+
+.mini-code-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 30px 60px rgba(99, 102, 241, 0.25);
+}
+
+.mini-code-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.75rem;
+}
+
+.file-name {
+  margin-left: auto;
+  color: var(--text-muted);
+  font-family: "DM Sans", sans-serif;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.mini-code-body {
+  padding: 16px;
+  font-family: "DM Sans", monospace;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.code-key {
+  color: #818cf8;
+  font-weight: 600;
+}
+
+.code-string {
+  color: #34d399;
+}
+
+.code-accent {
+  color: #22c55e;
+  font-weight: 600;
+}
+
 </style>

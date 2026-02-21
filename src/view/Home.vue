@@ -356,9 +356,29 @@ watch(darkMode, async () => {
           to back. Every project he delivers works seamlessly across all screen
           sizes and devices.
         </p>
-        <div class="flex gap-4 justify-center mb-14">
-          <a href="#" class="icon-link"><i class="bi bi-github text-xl"></i></a>
-        </div>
+<div class="flex justify-center mb-16 reveal fade-up" style="--delay:0.2s">
+  <div class="mini-code-card">
+    
+    <!-- Top bar -->
+    <div class="mini-code-header">
+      <span class="dot bg-red-500"></span>
+      <span class="dot bg-yellow-400"></span>
+      <span class="dot bg-green-500"></span>
+      <span class="file-name">dev.js</span>
+    </div>
+
+    <!-- Code content -->
+    <div class="mini-code-body">
+      <p><span class="code-key">const</span> developer = {"{"}</p>
+      <p>&nbsp;&nbsp;name: <span class="code-string">'Kewar'</span>,</p>
+      <p>&nbsp;&nbsp;role: <span class="code-string">'Full Stack'</span>,</p>
+      <p>&nbsp;&nbsp;status: <span class="code-accent">'Available'</span></p>
+      <p>{"}"}</p>
+    </div>
+
+  </div>
+</div>
+
         <div class="flex flex-wrap justify-center gap-12">
           <div v-for="s in stats" :key="s.label" class="text-center">
             <div class="text-3xl font-bold text-indigo-400">{{ s.value }}</div>
@@ -458,21 +478,74 @@ watch(darkMode, async () => {
       </div>
     </section>
 
-    <!-- ===== PROJECTS ===== -->
-    <section id="work" class="py-24 px-8 max-w-6xl mx-auto">
-      <h3
-        class="text-2xl font-bold mb-10 text-center tracking-wide reveal fade-up"
-      >
-        My Work
-      </h3>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div
-          class="project-card col-span-full flex items-center justify-center h-40 opacity-40 border-dashed reveal fade-up"
-        >
-          <p class="text-muted text-sm">Projects coming soon...</p>
+  <!-- ===== PROJECTS ===== -->
+<section id="work" class="py-24 px-8 max-w-6xl mx-auto">
+  <h3
+    class="text-2xl font-bold mb-14 text-center tracking-wide reveal fade-up"
+  >
+    Selected Projects
+  </h3>
+
+  <div class="grid md:grid-cols-2 gap-10">
+
+    <!-- Project Card -->
+    <div
+      class="project-card reveal fade-up group relative overflow-hidden"
+    >
+      <!-- Top Accent Line -->
+      <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"></div>
+
+      <!-- Content -->
+      <div class="p-6 flex flex-col h-full justify-between">
+
+        <!-- Project Title -->
+        <div>
+          <h4 class="text-lg font-semibold mb-2 flex items-center gap-2">
+            <i class="bi bi-building text-indigo-400"></i>
+            Infinity Solutions
+          </h4>
+
+          <p class="text-muted text-sm leading-relaxed mb-4">
+            A professional company website built with Vue.js and Tailwind.
+            Features modern UI, smooth animations, and fully responsive design.
+          </p>
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="project-tag">Vue.js</span>
+          <span class="project-tag">Tailwind</span>
+          <span class="project-tag">Responsive</span>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex items-center justify-between">
+          <a
+            href="https://infinitysolutionsulaymanyah.vercel.app/"
+            target="_blank"
+            class="inline-flex items-center gap-2 text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition"
+          >
+            <i class="bi bi-box-arrow-up-right"></i>
+            Visit Website
+          </a>
+
+          <div
+            class="opacity-0 group-hover:opacity-100 transition duration-300 text-xs text-muted"
+          >
+            Live Project
+          </div>
         </div>
       </div>
-    </section>
+
+      <!-- Hover Glow -->
+      <div
+        class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none bg-gradient-to-br from-indigo-500/10 via-transparent to-purple-500/10"
+      ></div>
+    </div>
+
+  </div>
+</section>
+
 
     <!-- ===== CONTACT ===== -->
     <section id="contact" class="py-24 px-8 max-w-6xl mx-auto">
